@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap');
+
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-image: url("/assets/images/background-paper.png");
+    background-size: contain;
+    color:black;
+}
+
+
+
+a{
+    color:black;
+}
+a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  a:active {
+    text-decoration: underline;
+  }
+
+header{
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+    padding:20px;
+}
+
+#logo{
+    width:100%;
+    transition: all .2s ease;
+}
+
+#logo:hover{
+   transform: scale(1.1)
+}
+
+nav{
+    margin-top:30px;
+}
+
+
+nav ul{
+    display:flex;
+    justify-content: space-evenly;
+    text-align:center;
+    list-style: none;
+    font-family: 'Londrina Solid', cursive;
+    font-size:1.5rem;
+    
+}
+
+nav ul img{
+    box-shadow: -3px 4px 0px white;
+    border-radius: 100%;
+}
+
+nav ul li:nth-child(odd){
+    text-shadow:1px 2px #3393c6;
+}
+
+nav ul li:nth-child(even){
+    text-shadow:1px 2px #dd3737;
+}
+
+nav ul p{
+margin-top:10px;
+}
+
+.slider{
+margin-bottom:50px;
+}
+
+.slider img{
+    width:100%;
+}
+
+.help-banner{
+    text-align:center;
+    margin: 3.5rem auto;
+}
+
+.help-banner img{
+    width:75%;
+}
+
+.cards-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap:40px;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin:0 auto;
+padding:40px;
+}
+
+.cards-back-container{
+position:relative;
+  }
+  
+  
+  
+  #card-1, 
+  #card-2, 
+  #card-3{
+    transition: all .4s ease;
+    position:absolute;
+    top:-150px;
+    transform: rotate(-15deg);
+    border-radius: 10px;
+    width:80%
+  }
+  
+
+
+.cards{
+    transition: all .2s ease;
+    border-radius: 10px;
+    width:80%
+}
+
+
+.cards:hover{
+box-shadow: 10px 10px 10px grey;
+transform: scale(1.01) rotate(2.5deg);
+
+}
+
+
