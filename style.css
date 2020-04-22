@@ -13,12 +13,15 @@ body{
     background-image: url("/assets/images/background-paper.png");
     background-size: contain;
     color:black;
+    font-family: 'Londrina Solid', cursive;
+  
 }
 
 
 
 a{
     color:black;
+    
 }
 a:link {
     text-decoration: none;
@@ -83,13 +86,15 @@ nav ul p{
 margin-top:10px;
 }
 
-.slider{
+.photo-banner{
 margin-bottom:50px;
+
 }
 
-.slider img{
+.photo-banner img{
     width:100%;
 }
+
 
 .help-banner{
     text-align:center;
@@ -107,8 +112,8 @@ margin-bottom:50px;
     align-items: center;
     justify-content: center;
     width: 80%;
-    margin:0 auto;
-padding:40px;
+    margin:0 auto 50px auto;
+    padding:40px;
 }
 
 .cards-back-container{
@@ -125,7 +130,8 @@ position:relative;
     top:-150px;
     transform: rotate(-15deg);
     border-radius: 10px;
-    width:80%
+    width:80%;
+    z-index: 1;
   }
   
 
@@ -133,14 +139,173 @@ position:relative;
 .cards{
     transition: all .2s ease;
     border-radius: 10px;
-    width:80%
+    width:80%;
+    margin:0 auto;
+z-index:0;
+}
+
+.cards:nth-child(odd){
+    transform: rotate(-3deg);
+}
+
+.cards:nth-child(even){
+    transform: rotate(3deg);
 }
 
 
 .cards:hover{
 box-shadow: 10px 10px 10px grey;
-transform: scale(1.01) rotate(2.5deg);
+transform: scale(1.1) rotate(0deg)
+}
+
+
+
+
+.browse-by{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:50px;
+}
+
+.browse-by img{
+    width:400px;
+    margin-bottom:30px;
+}
+
+#daniel{
+    width:300px;
+    height:300px;
+   border-radius: 100%;
+   box-shadow: -10px 10px 0 rgb(245, 186, 42);
+   transition:all .3s ease;
+}
+
+#daniel:hover{
+    box-shadow:0 0 0 10px rgb(245, 186, 42);
+  
+}
+
+span.red-text,
+span.blue-text{
+font-size:4rem;
+vertical-align:-15% ;
 
 }
 
 
+
+span.red-text{
+    color:#dd3737;
+}
+
+
+span.blue-text{
+color:#3393c6;
+}
+
+
+
+.testimonials-container{
+    width: 75%;
+    margin:0 auto;
+    text-align:center;
+    padding:100px;
+}
+
+.testimonials-container img{
+    width:400px;
+    
+}
+
+
+
+footer{
+    color:white;
+    text-align:center;
+}
+
+
+
+.blue-bar{
+    background-color:rgb(59, 155, 194);
+    /* display:flex; */
+
+}
+
+.blue-bar div{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding:50px 20px;
+   
+   
+}
+
+
+
+.blue-bar img{
+    width:350px;
+   
+}
+
+.red-bar{
+    background-color:#d13531;
+    height:50px;
+}
+
+.footer-copyright{
+    background-color:black;
+    height:50px;
+    padding-top:15px
+}
+
+.footer-copyright span{
+    color:#d13531;
+}
+
+
+
+
+
+
+/* Round perfomer slider css */
+
+/* the slide container with a fixed size */
+.slides {
+   
+    width: 300px;
+    height: 300px;
+    position: relative;
+    border-radius:50%;
+    box-shadow:0 0 0 10px rgb(245, 186, 42);
+    transition:all .3s ease;
+  }
+  
+  .slides:hover{
+    box-shadow:0 0 0 15px rgb(245, 186, 42);
+  }
+  /* the images are positioned absolutely to stack. opacity transitions are animated. */
+  .slides img { 
+    display: block;
+    position: absolute; 
+    transition: opacity 1s;
+    opacity: 0;
+    width: 100%;
+    border-radius:50%;
+  }
+  
+  /* the first image is the current slide. it's faded in. */
+  .slides img:first-child { 
+    z-index: 2; /* frontmost */
+    opacity: 1;
+  }
+  
+  /* the last image is the previous slide. it's behind the current slide and it's faded over. */
+  .slides img:last-child {
+    z-index: 1; /* behind current slide */
+    opacity: 1;
+  }
+  
+  
+ 
