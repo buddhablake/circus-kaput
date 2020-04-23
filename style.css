@@ -114,6 +114,7 @@ margin-bottom:50px;
     width: 80%;
     margin:0 auto 50px auto;
     padding:40px;
+    max-width:800px;
 }
 
 .cards-back-container{
@@ -169,7 +170,7 @@ transform: scale(1.1) rotate(0deg)
 }
 
 .browse-by img{
-    width:400px;
+    width:450px;
     margin-bottom:30px;
 }
 
