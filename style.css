@@ -8,12 +8,17 @@
     box-sizing: border-box;
 }
 
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
 
 body{
     background-image: url("assets/images/background-paper.png");
     background-size: contain;
     color:black;
     font-family: 'Londrina Solid', cursive;
+
 
 }
 
@@ -371,6 +376,7 @@ transform:scale(1.1);
   @media screen and (max-width: 768px){
   body{
     overflow-x:hidden;
+    position: relative;
   }
 
   nav ul{
